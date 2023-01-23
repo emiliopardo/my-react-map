@@ -18,7 +18,8 @@ export default function Map() {
         },
         {
             title: "Roman Empire",
-            uri: `https://klokantech.github.io/roman-empire/style.json`
+            // uri: `https://klokantech.github.io/roman-empire/style.json`
+            uri: `http://10.240.1.134:8080/styles/roman-empire/style.json`
         }
     ];
 
@@ -53,54 +54,3 @@ export default function Map() {
         </div>
     );
 }
-
-
-
-
-// window.addEventListener("load", function () {
-//     const map = new maplibregl.Map({
-//         container: "Map",
-//         attributionControl: false,
-//         style: {
-//             version: 8,
-//             sources: {},
-//             layers: []
-//         }
-//     });
-//     map.addControl(new maplibregl.AttributionControl({ compact: true }), "bottom-right");
-//     map.addControl(
-//         new MaplibreGLBasemapsControl(
-//             {
-//                 basemaps: [
-//                     {
-//                         id: "basemap_World_Topo_Map",
-//                         tiles: ["//server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}"],
-//                         sourceExtraParams: {
-//                             tileSize: 256,
-//                             attribution: "Sources: Esri, HERE, Garmin, Intermap, increment P Corp., GEBCO, USGS, FAO, NPS, NRCAN, GeoBase, IGN, Kadaster NL, Ordnance Survey, Esri Japan, METI, Esri China (Hong Kong), (c) OpenStreetMap contributors, and the GIS User Community",
-//                             minzoom: 0,
-//                             maxzoom: 22
-//                         }
-//                     },
-//                     {
-//                         id: "stamen",
-//                         tiles: [
-//                             "//stamen-tiles-a.a.ssl.fastly.net/toner/{z}/{x}/{y}.png",
-//                             "//stamen-tiles-b.a.ssl.fastly.net/toner/{z}/{x}/{y}.png",
-//                             "//stamen-tiles-c.a.ssl.fastly.net/toner/{z}/{x}/{y}.png",
-//                             "//stamen-tiles-d.a.ssl.fastly.net/toner/{z}/{x}/{y}.png"
-//                         ],
-//                         sourceExtraParams: {
-//                             tileSize: 256,
-//                             attribution: "Map tiles by <a href='http://stamen.com'>Stamen Design</a>, <a href='http://creativecommons.org/licenses/by/3.0'>CC BY 3.0</a> &mdash; Map data &copy; <a href='http://openstreetmap.org'>OpenStreetMap</a> contributors, <a href='http://creativecommons.org/licenses/by-sa/2.0/''>CC-BY-SA</a>",
-//                             minzoom: 0,
-//                             maxzoom: 20
-//                         }
-//                     }
-//                 ],
-//                 initialBasemap: "stamen",
-//                 expandDirection: "top"
-//             }),
-//         "bottom-left"
-//     );
-// });
