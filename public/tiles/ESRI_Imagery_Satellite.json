@@ -1,0 +1,38 @@
+{
+  "version": 8,
+  "metadata": {
+    "maputnik:renderer": "mbgljs",
+    "maputnik:owner": "Esri. ArcGIS Online Basemaps Imagery/Satellite"
+  },
+  "center": [
+    -74.5,
+    40
+  ],
+  "sources": {
+    "ESRI_Imagery_Satellite": {
+      "type": "raster",
+      "tiles": [
+        "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}"
+      ],
+      "minzoom": 0,
+      "maxzoom": 22
+    }
+  },
+  "layers": [
+    {
+      "id": "ESRI Imagery/Satellite",
+      "type": "raster",
+      "source": "ESRI_Imagery_Satellite",
+      "maxzoom": 22
+    }
+  ],
+  "bounds": [
+    -8.569336,
+    35.299435,
+    -1.516113,
+    38.479395
+  ],
+  "id": "ESRI_Imagery_Satellite",
+  "owner": "Esri. ArcGIS Online Basemaps Imagery/Satellite",
+  "attribution": "Esri. ArcGIS Online Basemaps Imagery/Satellite"
+}
