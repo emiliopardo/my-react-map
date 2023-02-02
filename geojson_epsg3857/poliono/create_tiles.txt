@@ -1,17 +1,17 @@
 docker run -it -v $HOME/tippecanoe:/tippecanoe morlov/tippecanoe:latest
 
 
-tippecanoe -zg -o casaColumna.mbtiles --drop-densest-as-needed -s EPSG:3857 casaColumna.geojson
-tippecanoe -zg -o casaMartes.mbtiles --drop-densest-as-needed -s EPSG:3857 casaMartes.geojson
-tippecanoe -zg -o casaNorte.mbtiles --drop-densest-as-needed -s EPSG:3857 casaNorte.geojson
-tippecanoe -zg -o casaPeristilo.mbtiles --drop-densest-as-needed -s EPSG:3857 casaPeristilo.geojson
-tippecanoe -zg -o foro.mbtiles --drop-densest-as-needed -s EPSG:3857 foro.geojson
-tippecanoe -zg -o macellum.mbtiles --drop-densest-as-needed -s EPSG:3857 macellum.geojson
-tippecanoe -zg -o murallaPerimetro8930N.mbtiles --drop-densest-as-needed -s EPSG:3857 murallaPerimetro8930N.geojson
-tippecanoe -zg -o recinto1.mbtiles --drop-densest-as-needed -s EPSG:3857 recinto1.geojson
-tippecanoe -zg -o recinto2.mbtiles --drop-densest-as-needed -s EPSG:3857 recinto2.geojson
-tippecanoe -zg -o recinto3.mbtiles --drop-densest-as-needed -s EPSG:3857 recinto3.geojson
-tippecanoe -zg -o termas.mbtiles --drop-densest-as-needed -s EPSG:3857 termas.geojson
+tippecanoe  -zg -Z4 -o casaColumna.mbtiles -s EPSG:3857 casaColumna.geojson
+tippecanoe  -zg -Z4 -o casaMartes.mbtiles -s EPSG:3857 casaMartes.geojson
+tippecanoe  -zg -Z4 -o casaNorte.mbtiles -s EPSG:3857 casaNorte.geojson
+tippecanoe  -zg -Z4 -o casaPeristilo.mbtiles -s EPSG:3857 casaPeristilo.geojson
+tippecanoe  -zg -Z4 -o foro.mbtiles -s EPSG:3857 foro.geojson
+tippecanoe  -zg -Z4 -o macellum.mbtiles -s EPSG:3857 macellum.geojson
+tippecanoe  -zg -Z4 -o murallaPerimetro8930N.mbtiles -s EPSG:3857 murallaPerimetro8930N.geojson
+tippecanoe  -zg -Z4 -o recinto1.mbtiles -s EPSG:3857 recinto1.geojson
+tippecanoe  -zg -Z4 -o recinto2.mbtiles -s EPSG:3857 recinto2.geojson
+tippecanoe  -zg -Z4 -o recinto3.mbtiles -s EPSG:3857 recinto3.geojson
+tippecanoe  -zg -Z4 -o termas.mbtiles -s EPSG:3857 termas.geojson
 
 
 
