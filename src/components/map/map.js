@@ -9,19 +9,19 @@ export default function Map() {
     const styles: MapboxStyleDefinition[] = [
         {
             title: "Andalucía OSM OSM Liberty",
-            uri: `http://10.240.1.134:8080/styles/style-osm-liberty/style.json`
+            uri: `http://10.240.1.134:8081/styles/style-osm-liberty/style.json`
         },
         {
             title: "Andalucía OSM Positron",
-            uri: `http://10.240.1.134:8080/styles/style-osm-positron/style.json`
+            uri: `http://10.240.1.134:8081/styles/style-osm-positron/style.json`
         },
         {
             title: "Andalucía OSM Dark-Matter",
-            uri: `http://10.240.1.134:8080/styles/style-osm-dark-matter/style.json`
+            uri: `http://10.240.1.134:8081/styles/style-osm-dark-matter/style.json`
         },
         {
             title: "Roman Empire",
-            uri: `http://10.240.1.134:8080/styles/roman-empire/style.json`
+            uri: `http://10.240.1.134:8081/styles/roman-empire/style.json`
         },
         {
             title: "ESRI Imagery/Satellite",
@@ -41,7 +41,7 @@ export default function Map() {
         if (map.current) return;
         map.current = new maplibregl.Map({
             container: mapContainer.current,
-            style: `http://10.240.1.134:8080/styles/style-osm-liberty/style.json`,
+            style: `http://10.240.1.134:8081/styles/style-osm-liberty/style.json`,
             center: [lng, lat],
             bearing: bearing,
             pitch: pitch,
@@ -52,7 +52,7 @@ export default function Map() {
             map.current.addSource('corpus_urbium_baeticarum', {
                 type: 'vector',
                 url:
-                    'http://localhost:8080/data/corpus_urbium_baeticarum.json'
+                    'http://localhost:8081/data/corpus_urbium_baeticarum.json'
             });
             map.current.addLayer({
                 "id": "curvasNivel",
