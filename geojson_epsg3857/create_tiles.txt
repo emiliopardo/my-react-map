@@ -1,0 +1,18 @@
+docker run -it -v $HOME/tippecanoe:/tippecanoe morlov/tippecanoe:latest
+
+
+tippecanoe -o casaColumna.mbtiles -s EPSG:3857 casaColumna.geojson
+tippecanoe -o casaMartes.mbtiles -s EPSG:3857 casaMartes.geojson
+tippecanoe -o casaNorte.mbtiles -s EPSG:3857 casaNorte.geojson
+tippecanoe -o casaPeristilo.mbtiles -s EPSG:3857 casaPeristilo.geojson
+tippecanoe -o foro.mbtiles -s EPSG:3857 foro.geojson
+tippecanoe -o macellum.mbtiles -s EPSG:3857 macellum.geojson
+tippecanoe -o murallaPerimetro8930N.mbtiles -s EPSG:3857 murallaPerimetro8930N.geojson
+tippecanoe -o recinto1.mbtiles -s EPSG:3857 recinto1.geojson
+tippecanoe -o recinto2.mbtiles -s EPSG:3857 recinto2.geojson
+tippecanoe -o recinto3.mbtiles -s EPSG:3857 recinto3.geojson
+tippecanoe -o termas.mbtiles -s EPSG:3857 termas.geojson
+
+
+
+tile-join -o test.mbtiles casaColumna.mbtiles casaMartes.mbtiles casaNorte.mbtiles casaPeristilo.mbtiles foro.mbtiles macellum.mbtiles murallaPerimetro8930N.mbtiles recinto1.mbtiles recinto2.mbtiles recinto3.mbtiles termas.mbtiles
